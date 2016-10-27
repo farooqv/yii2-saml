@@ -38,7 +38,11 @@ Register ``asasmoyo\yii2saml\Saml`` to your components in ``config/web.php``.
 ]
 ```
 
-This component requires a ``OneLogin_Saml`` configuration stored in a php file. The default value for ``configFileName`` is ``@app/config/saml.php`` so make sure to create this file before. See this [link](https://github.com/onelogin/php-saml/blob/master/settings_example.php) for example configuration.
+This component requires a ``OneLogin_Saml`` configuration stored in a php file. The default value for ``configFileName`` is ``@app/config/saml.php`` so make sure to create this file before. See this [link](https://github.com/onelogin/php-saml/blob/master/settings_example.php) for example configuration. 
+To include the settings, add the following at end of ``@app/config/saml.php`` file
+```php
+return $settings;
+```
 
 Usage
 -----
